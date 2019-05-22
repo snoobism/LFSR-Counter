@@ -1,0 +1,25 @@
+58
+~E 1 "./../src/AND_5.vhd" 4 AND_5
+~A 1 "./../src/AND_5.vhd" 10 Behavioral_AND_5
+~E 1 "./../src/display.vhd" 4 bcd_7segment
+~A 1 "./../src/display.vhd" 10 Behavioral
+~E 1 "./../src/debouncer.vhd" 4 Debounce
+~A 1 "./../src/debouncer.vhd" 12 behavioral
+~E 1 "./../src/DFF.vhd" 4 DFF
+~A 1 "./../src/DFF.vhd" 10 Behavioral_DFF
+~E 1 "./../src/LFSR_counter.vhd" 4 LFSR_counter
+~A 1 "./../src/LFSR_counter.vhd" 15 structural_lfsr_counter
+~E 1 "./../src/MUX_2_TO_1.vhd" 4 MUX_2_TO_1
+~A 1 "./../src/MUX_2_TO_1.vhd" 13 Behavioral_MUX_2_TO_1
+~E 1 "./../src/MUX_32_TO_1.vhd" 4 MUX_32_TO_1
+~A 1 "./../src/MUX_32_TO_1.vhd" 12 Behavioral_MUX_32_TO_1
+~E 1 "./../src/OR_2.vhd" 4 OR_2
+~A 1 "./../src/OR_2.vhd" 10 Behavioral_OR_2
+~E 1 "./../src/ROM_5_TO_5.vhd" 4 ROM_5_TO_5
+~A 1 "./../src/ROM_5_TO_5.vhd" 10 Behavioral_ROM_5_TO_5
+~E 1 "./../src/display.vhd" 6 SSD
+~A 1 "./../src/display.vhd" 13 behavioral
+~E 1 "./../src/XNOR_2.vhd" 4 XNOR_2
+~A 1 "./../src/XNOR_2.vhd" 9 Behavioral_XNOR_2
+~E 1 "./../src/XOR_2.vhd" 4 XOR_2
+~A 1 "./../src/XOR_2.vhd" 10 Behavioral_XOR_2

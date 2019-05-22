@@ -1,0 +1,319 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 38
+ VARIABLES
+ {
+  #ARCHITECTURE="Behavioral"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"dreg\"><left=\"7\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="Debounce"
+  #LANGUAGE="VHDL"
+  #RANGE_RESOLUTION0="<range<index=\"0\"><name=\"DReg\"><left=\"7\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  AUTHOR="Edi"
+  COMPANY="Utcn"
+  CREATIONDATE="20-May-19"
+  SOURCE=".\\..\\src\\debouncer.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  ARCHITECTUREDECLARATIONS  2, 0, 0
+  {
+   LABEL "Architecture Declaration"
+   TEXT 
+"type State_Type is (S0, S1);\n"+
+""
+   RECT (220,439,620,618)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  3, 0, 0
+  {
+   LABEL "process_19"
+   TEXT 
+"process (CLK,x)\n"+
+"                         variable SDC : integer;\n"+
+"                         constant Delay : integer := 50000;\n"+
+"                       begin\n"+
+"                         if CLK'Event and CLK = '1' then\n"+
+"                            DPB <= SPB;\n"+
+"                            SPB <= x;\n"+
+"                            case State is \n"+
+"                              when S0 => \n"+
+"                                 DReg <= DReg(6 downto 0) & DPB;\n"+
+"                                 SDC := Delay;\n"+
+"                                 State <= S1;\n"+
+"                              when S1 => \n"+
+"                                 SDC := SDC - 1;\n"+
+"                                 if SDC = 0 then\n"+
+"                                    State <= S0;\n"+
+"                                 end if;\n"+
+"                              when others => \n"+
+"                                 State <= S0;\n"+
+"                            end case;\n"+
+"                            if DReg = X\"FF\" then\n"+
+"                               DBx <= '1';\n"+
+"                            elsif DReg = X\"00\" then\n"+
+"                               DBx <= '0';\n"+
+"                            end if;\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (920,240,1321,640)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  18, 20, 23, 26, 29, 32, 35 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  32, 35 )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="CLK"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (780,260)
+   VERTEXES ( (2,33) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="DBx"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (1420,420)
+   VERTEXES ( (2,17) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="x"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (780,300)
+   VERTEXES ( (2,36) )
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (728,260,728,260)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1472,420,1472,420)
+   ALIGN 4
+   PARENT 5
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (728,300,728,300)
+   ALIGN 6
+   PARENT 6
+  }
+  NET WIRE  10, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="DPB"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET BUS  11, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="DReg(7:0)"
+    #VHDL_TYPE="BIT_VECTOR"
+   }
+  }
+  NET WIRE  12, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="SPB"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  13, 0, 0
+  {
+   VARIABLES
+   {
+    #INITIAL_VALUE="S0"
+    #NAME="State"
+    #VHDL_TYPE="State_Type"
+   }
+  }
+  NET WIRE  14, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="CLK"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  15, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="DBx"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  16, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="x"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  VTX  17, 0, 0
+  {
+   COORD (1420,420)
+  }
+  VTX  18, 0, 0
+  {
+   COORD (1321,420)
+  }
+  WIRE  19, 0, 0
+  {
+   NET 15
+   VTX 17, 18
+  }
+  VTX  20, 0, 0
+  {
+   COORD (1321,380)
+  }
+  VTX  21, 0, 0
+  {
+   COORD (1400,380)
+  }
+  WIRE  22, 0, 0
+  {
+   NET 10
+   VTX 20, 21
+  }
+  VTX  23, 0, 0
+  {
+   COORD (1321,300)
+  }
+  VTX  24, 0, 0
+  {
+   COORD (1400,300)
+  }
+  BUS  25, 0, 0
+  {
+   NET 11
+   VTX 23, 24
+  }
+  VTX  26, 0, 0
+  {
+   COORD (1321,260)
+  }
+  VTX  27, 0, 0
+  {
+   COORD (1400,260)
+  }
+  WIRE  28, 0, 0
+  {
+   NET 12
+   VTX 26, 27
+  }
+  VTX  29, 0, 0
+  {
+   COORD (1321,340)
+  }
+  VTX  30, 0, 0
+  {
+   COORD (1400,340)
+  }
+  WIRE  31, 0, 0
+  {
+   NET 13
+   VTX 29, 30
+  }
+  VTX  32, 0, 0
+  {
+   COORD (920,260)
+  }
+  VTX  33, 0, 0
+  {
+   COORD (780,260)
+  }
+  WIRE  34, 0, 0
+  {
+   NET 14
+   VTX 32, 33
+  }
+  VTX  35, 0, 0
+  {
+   COORD (920,300)
+  }
+  VTX  36, 0, 0
+  {
+   COORD (780,300)
+  }
+  WIRE  37, 0, 0
+  {
+   NET 16
+   VTX 35, 36
+  }
+ }
+ 
+}
+

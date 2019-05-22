@@ -1,0 +1,286 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 33
+ VARIABLES
+ {
+  #ARCHITECTURE="Behavioral_DFF"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="DFF"
+  #LANGUAGE="VHDL"
+  AUTHOR="Edi"
+  COMPANY="Utcn"
+  CREATIONDATE="20-May-19"
+  SOURCE=".\\..\\src\\DFF.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "process_12"
+   TEXT 
+"process (CLK,RST)\n"+
+"                       begin\n"+
+"                         if RST = '1' then\n"+
+"                            Q <= '0';\n"+
+"                         elsif (CLK'EVENT) and (CLK = '1') then\n"+
+"                            Q <= D;\n"+
+"                            NQ <= not D;\n"+
+"                         end if;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (920,240,1321,620)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  18, 21, 25, 27, 31 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  25, 31 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="CLK"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (780,260)
+   VERTEXES ( (2,24) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="D"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (780,340)
+   VERTEXES ( (2,28) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="NQ"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (1420,300)
+   VERTEXES ( (2,19) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="Q"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (1420,260)
+   VERTEXES ( (2,22) )
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="RST"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (780,300)
+   VERTEXES ( (2,30) )
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (728,260,728,260)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (728,340,728,340)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1472,300,1472,300)
+   ALIGN 4
+   PARENT 5
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1472,260,1472,260)
+   ALIGN 4
+   PARENT 6
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (728,300,728,300)
+   ALIGN 6
+   PARENT 7
+  }
+  NET WIRE  13, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="CLK"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  14, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="D"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  15, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="NQ"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  16, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Q"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  17, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="RST"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  VTX  18, 0, 0
+  {
+   COORD (1321,300)
+  }
+  VTX  19, 0, 0
+  {
+   COORD (1420,300)
+  }
+  WIRE  20, 0, 0
+  {
+   NET 15
+   VTX 18, 19
+  }
+  VTX  21, 0, 0
+  {
+   COORD (1321,260)
+  }
+  VTX  22, 0, 0
+  {
+   COORD (1420,260)
+  }
+  WIRE  23, 0, 0
+  {
+   NET 16
+   VTX 21, 22
+  }
+  VTX  24, 0, 0
+  {
+   COORD (780,260)
+  }
+  VTX  25, 0, 0
+  {
+   COORD (920,260)
+  }
+  WIRE  26, 0, 0
+  {
+   NET 13
+   VTX 24, 25
+  }
+  VTX  27, 0, 0
+  {
+   COORD (920,340)
+  }
+  VTX  28, 0, 0
+  {
+   COORD (780,340)
+  }
+  WIRE  29, 0, 0
+  {
+   NET 14
+   VTX 27, 28
+  }
+  VTX  30, 0, 0
+  {
+   COORD (780,300)
+  }
+  VTX  31, 0, 0
+  {
+   COORD (920,300)
+  }
+  WIRE  32, 0, 0
+  {
+   NET 17
+   VTX 30, 31
+  }
+ }
+ 
+}
+

@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints and assertion debug will not be available."
+MESSAGE "File: e:\My_Designs\LFSR_counter\simulation\src\display.vhd" 
+MESSAGE "Compile Entity "SSD"" 
+MESSAGE "Compile Architecture "Behavioral" of Entity "SSD"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]" 

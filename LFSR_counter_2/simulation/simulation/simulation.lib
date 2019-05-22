@@ -1,0 +1,150 @@
+timestamp=1558361257925
+
+[~A]
+ModifyID=58
+Version=74
+
+[and_5]
+A/behavioral_and_5=A/Behavioral_AND_5 21|./../src/AND_5.vhd|10|1*468489
+BinI32/behavioral_and_5=3*89124
+I=0*464
+I/behavioral_and_5=I/Behavioral_AND_5 0*129681
+M=11|0|vde|1555685394810|./../src/AND_5.vhd|0*174*0xc9a3f46786a9d213e4ad5f65fd5d07c1c7f3a8cc|0*387*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral_and_5=M/Behavioral_AND_5 21|0|vde|1557156159145|./../src/AND_5.vhd|0*7611*0x90fe0286eddd6ae165e04f487ae95f4b38c31829|0*7864*0x20116f55b147878295aeff36dce7fc50
+R=./../src/AND_5.vhd|4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|7bcab3311d77cebb28ba1f4da4e66ab182324fa81f4d5337d95b3036ad4be235
+Version/behavioral_and_5=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|89a1bb70e2a69959644a8a186d19c456247745f07b01938c7d962b19631ee76d656746b75afb4f4d2295eed382bf4ecb
+
+[bcd_7segment]
+A/behavioral=A/Behavioral 21|./../src/display.vhd|10|1*486236
+BinI32/behavioral=3*92963
+I=0*132717
+I/behavioral=I/Behavioral 0*135975
+M=11|0|vde|1557156159539|./../src/display.vhd|0*132332*0x5730adca05417d866ac153206fe431e6deaf00da|0*132631*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|0|vde|1557156159541|./../src/display.vhd|0*132923*0x6b492977ca7ec6e56795eaf6b05da16b97326322|0*135875*0x20116f55b147878295aeff36dce7fc50
+R=./../src/display.vhd|4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|850bbd9da7d460636fc4f02f09f7c459dae3d45bcca89b634e57db3bce6eac980ca9602f94b24d5fac0c323eab53dd52
+Version/behavioral=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4284bb058072c35a8ec1f27c5b97fe995
+
+[debounce]
+A/behavioral=+21|./../src/debouncer.vhd|12|1*496993
+I=0*148142
+M=11|0|vde|1558361257585|./../src/debouncer.vhd|0*147844*0x02146ed0fc6c104e1cd6b54fc1b36292eec0f1ff|0*148058*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|0|vde|1557358880600|./../src/debouncer.vhd|0*104812*0x6aa51c9f895ed4b309a5761a76fcf856bfad79a4|0*105461*0x20116f55b147878295aeff36dce7fc50
+R=./../src/debouncer.vhd|4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|2383c81ec9e742b193aba2367b4ffbb2b4470a4173a9ccfce999ce8608f2fc7b1084176a86b7d208d4cf2894028cb255
+Version/behavioral=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff440ff2e1db8578485f53f99e01103d5db
+
+[dff]
+A/behavioral_dff=A/Behavioral_DFF 21|./../src/DFF.vhd|10|1*469272
+BinI32/behavioral_dff=3*89371
+I=0*1095
+I/behavioral_dff=I/Behavioral_DFF 0*129897
+M=11|0|vde|1555685394836|./../src/DFF.vhd|0*831*0xe6694fbd64c0bb6a1ee45fb052c2b3939ef32eea|0*1022*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral_dff=M/Behavioral_DFF 21|0|vde|1557156159170|./../src/DFF.vhd|0*9041*0x66dce418e10688b0a4de961d9a7695832d252a3c|0*9296*0x20116f55b147878295aeff36dce7fc50
+R=./../src/DFF.vhd|4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|6a4f0a87167aa7fed99534ff2dffab1b9c072526b00cb437f6cf5d9be760b42a
+Version/behavioral_dff=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|bc158e74df7511e2c697f066b18bd3c240336329971f7c21836790376ec09a5d6bb66863b22a0b27e730d97575e9e860
+
+[lfsr_counter]
+A/structural_lfsr_counter=+21|./../src/LFSR_counter.vhd|15|1*498861
+I=0*150000
+M=11|0|vde|1558361257684|./../src/LFSR_counter.vhd|0*149553*0x4e12f6ceda807373d37b80c3cb9ab363542d1081|0*149909*0x23b75c12e3e89f2ef000564498faa8c2
+M/structural_lfsr_counter=M/Structural_LFSR_counter 21|0|vde|1557358907525|./../src/LFSR_counter.vhd|0*142003*0x2a6a7c8ce44dafc5b413ea139873ad9f4bfce677|0*145634*0x20116f55b147878295aeff36dce7fc50
+R=./../src/LFSR_counter.vhd|4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|c51abb1f8c814cb7e4df1d32c4eafefb8f58ddb03a85f8f08919f065a6e9282fbda5081e1461f998e466f77d687158ff
+Version/structural_lfsr_counter=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|f79c82b85d8a6f447450bfecd1605f93c82eb095caf64944822e15092941871f26527262ddaa47cb266f3a3c4d9b973abdaad85a580b6433b08ec7da024962ce
+
+[mux_2_to_1]
+A/behavioral_mux_2_to_1=A/Behavioral_MUX_2_TO_1 21|./../src/MUX_2_TO_1.vhd|13|1*479805
+BinI32/behavioral_mux_2_to_1=3*90490
+I=0*11181
+I/behavioral_mux_2_to_1=I/Behavioral_MUX_2_TO_1 0*130577
+M=11|0|vde|1555685613082|./../src/MUX_2_TO_1.vhd|0*10853*0xc63e61d92b49e02ae45b79742ceb8039a0ca4335|0*11094*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral_mux_2_to_1=M/Behavioral_MUX_2_TO_1 21|0|vde|1557156159423|./../src/MUX_2_TO_1.vhd|0*12461*0xba26e7f53178bd70c41d8951c283e14e20318e4b|0*12696*0x20116f55b147878295aeff36dce7fc50
+R=./../src/MUX_2_TO_1.vhd|4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|d659e3be869b203f850a4a9e20b517ac8d1e2f72f9e6e25e6afb70a515fc278702f9e99632b31084cc37f95db7181df8
+Version/behavioral_mux_2_to_1=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|71d16526619125efc0f3c87fb8a66b9bfec5156f5f3eded5eab2a0330dfede2d67bb6991e2c2e60a6add2da4a036a03a
+
+[mux_32_to_1]
+A/behavioral_mux_32_to_1=A/Behavioral_MUX_32_TO_1 21|./../src/MUX_32_TO_1.vhd|12|1*480525
+BinI32/behavioral_mux_32_to_1=3*90729
+I=0*21862
+I/behavioral_mux_32_to_1=I/Behavioral_MUX_32_TO_1 0*130803
+M=11|0|vde|1555685910162|./../src/MUX_32_TO_1.vhd|0*21522*0xfd5a0f4a88012b651bdfbd535799707deb809d24|0*21773*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral_mux_32_to_1=M/Behavioral_MUX_32_TO_1 21|0|vde|1557156159439|./../src/MUX_32_TO_1.vhd|0*22067*0x85a1c950a08215ce7e57716aaba6548ead0712a5|0*22455*0x20116f55b147878295aeff36dce7fc50
+R=./../src/MUX_32_TO_1.vhd|4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|4b2f5988e7f833edd599dbdf8268f29d4a56d36e929d4b379f8980baccd697cb952ec90829b073f81201dc37e0d96f1c
+Version/behavioral_mux_32_to_1=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|71d16526619125efc0f3c87fb8a66b9bf6fd895bd0eb2dafa5e97cd093b9b39823d3459a24a7a2d2680c5c713873fda5
+
+[or_2]
+A/behavioral_or_2=A/Behavioral_OR_2 21|./../src/OR_2.vhd|10|1*481403
+BinI32/behavioral_or_2=3*91231
+I=0*2540
+I/behavioral_or_2=I/Behavioral_OR_2 0*131031
+M=11|0|vde|1555685394887|./../src/OR_2.vhd|0*2282*0x19a292381fad4408e6b67f50ee642d4fa090705a|0*2465*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral_or_2=M/Behavioral_OR_2 21|0|vde|1557156159455|./../src/OR_2.vhd|0*2738*0xfc660d8ee91cb0a4923f09172771634e7b573d0d|0*2931*0x20116f55b147878295aeff36dce7fc50
+R=./../src/OR_2.vhd|4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|b81f194e6d3ec5d321de71d2bb086e57014b062f66ceb0d382053fda91654786
+Version/behavioral_or_2=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|6d1b383048dc1e6cb0aba8dc4c4591b28467af59062ee5588317ee1dc44373e953a08899c54d55428971b06ab892188b
+
+[rom_5_to_5]
+A/behavioral_rom_5_to_5=A/Behavioral_ROM_5_TO_5 21|./../src/ROM_5_TO_5.vhd|10|1*482046
+BinI32/behavioral_rom_5_to_5=3*91448
+I=0*84832
+I/behavioral_rom_5_to_5=I/Behavioral_ROM_5_TO_5 0*131245
+M=11|0|vde|1555761471676|./../src/ROM_5_TO_5.vhd|0*84508*0x6c30fc9bfdcc2dbe0543042192384531479dc456|0*84745*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral_rom_5_to_5=M/Behavioral_ROM_5_TO_5 21|0|vde|1557156159470|./../src/ROM_5_TO_5.vhd|0*99323*0x4b6cf0fa021065719cbd87fec8b79bddc329c9b4|0*101156*0x20116f55b147878295aeff36dce7fc50
+R=./../src/ROM_5_TO_5.vhd|4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|79d3721f0f268f9bb5e5c62a9da1d172272cf6319f81e47e7b3af5410e49b8bfbb6b472f28b5a292d74b6656dc39f779
+Version/behavioral_rom_5_to_5=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|43865d5a6d378fb43675515ac627e2f7c5202d73e2e90d01d6c26781431b055970d6ac9ebbd3c1ae7d493d757db0417e
+
+[ssd]
+A/behavioral=+21|./../src/display.vhd|13|1*509368
+I=0*148975
+M=11|0|vde|1558361257672|./../src/display.vhd|0*148539*0xdb3932ebe194d8d5fa744a3c55dadeaa51fb310a|0*148898*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral=M/Behavioral 21|0|vde|1557358990044|./../src/display.vhd|0*146249*0x5329d06f43d02b8d398a7b05a74faa3d0021266d|0*147332*0x20116f55b147878295aeff36dce7fc50
+R=./../src/display.vhd|6
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|76082ff9234893a73f2057168c8d5cc4fcd64101a9375a15a0751ea2c9b385b1
+Version/behavioral=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|35f8e56ee514308d50318f7abb190927faf8176ad6902a7357df79bb1a85bff4777487309e89c0033ad8b41cfe1a4b1a
+
+[xnor_2]
+A/behavioral_xnor_2=A/Behavioral_XNOR_2 21|./../src/XNOR_2.vhd|9|1*498209
+BinI32/behavioral_xnor_2=3*94230
+I=0*4395
+I/behavioral_xnor_2=I/Behavioral_XNOR_2 0*141785
+M=11|0|vde|1555685395018|./../src/XNOR_2.vhd|0*4128*0xeb872c6630535fcd95b5be7c6347b714932af7a0|0*4316*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral_xnor_2=M/Behavioral_XNOR_2 21|0|vde|1557358892451|./../src/XNOR_2.vhd|0*4595*0xa34fa26c03433fd4b83918716002e8a2c2c36cb2|0*4800*0x20116f55b147878295aeff36dce7fc50
+R=./../src/XNOR_2.vhd|4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|85552be3f4b86b0bfa6190d8e9d060282285eaf26a08d4aba1471d15faa37e5c
+Version/behavioral_xnor_2=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|906e8bde1497c863bbca169d08b642b66835f8d9b8548f301e9ad1c70c40c6d0f1ff8a26a9a7555a01ed65a3cb9a0d23
+
+[xor_2]
+A/behavioral_xor_2=A/Behavioral_XOR_2 21|./../src/XOR_2.vhd|10|1*484372
+BinI32/behavioral_xor_2=3*92264
+I=0*5543
+I/behavioral_xor_2=I/Behavioral_XOR_2 0*131689
+M=11|0|vde|1555685395036|./../src/XOR_2.vhd|0*5280*0xb34335d46ed4ef469c2ec458bcfb44b31f210de0|0*5466*0x23b75c12e3e89f2ef000564498faa8c2
+M/behavioral_xor_2=M/Behavioral_XOR_2 21|0|vde|1557156159506|./../src/XOR_2.vhd|0*5742*0xad8d1878fc23ad97c6ae2892f75575d8e234862c|0*5941*0x20116f55b147878295aeff36dce7fc50
+R=./../src/XOR_2.vhd|4
+Version=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|92e387ae0ac47fb378c719420a6cdc4df952919e3ebba8c89d9f3c06120fb068
+Version/behavioral_xor_2=10.5.217.6767 (Windows)|00000003789cd3f5370600015b00b0|906e8bde1497c863bbca169d08b642b67c9be486aecd9fedb6ba633f2ebb27c4a14923cc2f273bc419af67aed82e0ad4
+
+[~MFT]
+0=27|0simulation.mgf|150000|126496
+1=0|1simulation.mgf|509368|489917
+3=3|3simulation.mgf|18446744073709551615|91674
+
+[~U]
+and_5=AND_5 11|0*0|
+bcd_7segment=11|0*132118|
+debounce=Debounce 11|0*147710||0x100000000
+dff=DFF 11|0*663|
+lfsr_counter=LFSR_counter 11|0*149261||0x100000000
+mux_2_to_1=MUX_2_TO_1 11|0*10675|
+mux_32_to_1=MUX_32_TO_1 11|0*21329|
+or_2=OR_2 11|0*2122|
+rom_5_to_5=ROM_5_TO_5 11|0*84312|
+ssd=SSD 11|0*148300||0x100000000
+xnor_2=XNOR_2 11|0*3964|
+xor_2=XOR_2 11|0*5118|

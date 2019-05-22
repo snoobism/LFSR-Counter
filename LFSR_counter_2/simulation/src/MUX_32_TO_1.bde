@@ -1,0 +1,189 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 21
+ VARIABLES
+ {
+  #ARCHITECTURE="Behavioral_MUX_32_TO_1"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"l\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"nr\"><left=\"31\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="MUX_32_TO_1"
+  #LANGUAGE="VHDL"
+  AUTHOR="Edi"
+  COMPANY="Utcn"
+  CREATIONDATE="20-May-19"
+  SOURCE=".\\..\\src\\MUX_32_TO_1.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  2, 0, 0
+  {
+   LABEL "block_14"
+   TEXT "with L select X <= NR(5) when \"00101\", NR(10) when \"01010\", NR(14) when \"01110\", NR(16) when \"10000\", NR(18) when \"10010\", NR(22) when \"10110\", NR(27) when \"11011\", NR(31) when \"11111\", '1' when others;"
+   RECT (980,240,1381,340)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  12, 15, 18 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="L(4:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT_VECTOR"
+   }
+   COORD (840,260)
+   VERTEXES ( (2,16) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="NR(31:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT_VECTOR"
+   }
+   COORD (840,300)
+   VERTEXES ( (2,19) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="X"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (1480,260)
+   VERTEXES ( (2,13) )
+  }
+  TEXT  6, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (788,260,788,260)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (788,300,788,300)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1532,260,1532,260)
+   ALIGN 4
+   PARENT 5
+  }
+  NET BUS  9, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="L(4:0)"
+    #VHDL_TYPE="BIT_VECTOR"
+   }
+  }
+  NET BUS  10, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="NR(31:0)"
+    #VHDL_TYPE="BIT_VECTOR"
+   }
+  }
+  NET WIRE  11, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="X"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  VTX  12, 0, 0
+  {
+   COORD (1381,260)
+  }
+  VTX  13, 0, 0
+  {
+   COORD (1480,260)
+  }
+  WIRE  14, 0, 0
+  {
+   NET 11
+   VTX 12, 13
+  }
+  VTX  15, 0, 0
+  {
+   COORD (980,260)
+  }
+  VTX  16, 0, 0
+  {
+   COORD (840,260)
+  }
+  BUS  17, 0, 0
+  {
+   NET 9
+   VTX 15, 16
+  }
+  VTX  18, 0, 0
+  {
+   COORD (980,300)
+  }
+  VTX  19, 0, 0
+  {
+   COORD (840,300)
+  }
+  BUS  20, 0, 0
+  {
+   NET 10
+   VTX 18, 19
+  }
+ }
+ 
+}
+

@@ -1,0 +1,324 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 39
+ VARIABLES
+ {
+  #ARCHITECTURE="Behavioral_AND_5"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="AND_5"
+  #LANGUAGE="VHDL"
+  AUTHOR="Edi"
+  COMPANY="Utcn"
+  CREATIONDATE="20-May-19"
+  SOURCE=".\\..\\src\\AND_5.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "process_12"
+   TEXT 
+"process (Qin1,Qin2,Qin3,Qin4,Qin5)\n"+
+"                       begin\n"+
+"                         f <= Qin1 and Qin2 and Qin3 and Qin4 and Qin5;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (940,240,1341,460)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  22, 24, 28, 30, 33, 37 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  24, 28, 30, 33, 37 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="f"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (1440,260)
+   VERTEXES ( (2,21) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="Qin1"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (800,420)
+   VERTEXES ( (2,25) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="Qin2"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (800,260)
+   VERTEXES ( (2,27) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="Qin3"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (800,380)
+   VERTEXES ( (2,31) )
+  }
+  INSTANCE  7, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="Qin4"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (800,300)
+   VERTEXES ( (2,34) )
+  }
+  INSTANCE  8, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="Qin5"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (800,340)
+   VERTEXES ( (2,36) )
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1492,260,1492,260)
+   ALIGN 4
+   PARENT 3
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,420,748,420)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  11, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,260,748,260)
+   ALIGN 6
+   PARENT 5
+  }
+  TEXT  12, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,380,748,380)
+   ALIGN 6
+   PARENT 6
+  }
+  TEXT  13, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,300,748,300)
+   ALIGN 6
+   PARENT 7
+  }
+  TEXT  14, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,340,748,340)
+   ALIGN 6
+   PARENT 8
+  }
+  NET WIRE  15, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="f"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  16, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Qin1"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  17, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Qin2"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  18, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Qin3"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  19, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Qin4"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  20, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="Qin5"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  VTX  21, 0, 0
+  {
+   COORD (1440,260)
+  }
+  VTX  22, 0, 0
+  {
+   COORD (1341,260)
+  }
+  WIRE  23, 0, 0
+  {
+   NET 15
+   VTX 21, 22
+  }
+  VTX  24, 0, 0
+  {
+   COORD (940,420)
+  }
+  VTX  25, 0, 0
+  {
+   COORD (800,420)
+  }
+  WIRE  26, 0, 0
+  {
+   NET 16
+   VTX 24, 25
+  }
+  VTX  27, 0, 0
+  {
+   COORD (800,260)
+  }
+  VTX  28, 0, 0
+  {
+   COORD (940,260)
+  }
+  WIRE  29, 0, 0
+  {
+   NET 17
+   VTX 27, 28
+  }
+  VTX  30, 0, 0
+  {
+   COORD (940,380)
+  }
+  VTX  31, 0, 0
+  {
+   COORD (800,380)
+  }
+  WIRE  32, 0, 0
+  {
+   NET 18
+   VTX 30, 31
+  }
+  VTX  33, 0, 0
+  {
+   COORD (940,300)
+  }
+  VTX  34, 0, 0
+  {
+   COORD (800,300)
+  }
+  WIRE  35, 0, 0
+  {
+   NET 19
+   VTX 33, 34
+  }
+  VTX  36, 0, 0
+  {
+   COORD (800,340)
+  }
+  VTX  37, 0, 0
+  {
+   COORD (940,340)
+  }
+  WIRE  38, 0, 0
+  {
+   NET 20
+   VTX 36, 37
+  }
+ }
+ 
+}
+

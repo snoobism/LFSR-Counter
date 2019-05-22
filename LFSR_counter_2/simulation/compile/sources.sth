@@ -1,0 +1,19 @@
+[Files List]
+E:\Aldec\Active-HDL-Student-Edition\vlib\std/src/standard.vhd=S
+E:\Aldec\Active-HDL-Student-Edition\vlib\std/src/textio.vhd=S
+E:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/std_logic_1164.vhdl=S
+E:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/std_logic_1164-body.vhdl=S
+E:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/arith_p.vhd=S
+E:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/arith_b.vhd=S
+E:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/unsigned_p.vhd=S
+E:\Aldec\Active-HDL-Student-Edition\vlib\ieee/src/unsigned_b.vhd=S
+c:\Users\Edi\Desktop\LFSR_counter_2\simulation/src/display.vhd=S
+c:\Users\Edi\Desktop\LFSR_counter_2\simulation/src/DFF.vhd=S
+c:\Users\Edi\Desktop\LFSR_counter_2\simulation/src/XOR_2.vhd=S
+c:\Users\Edi\Desktop\LFSR_counter_2\simulation/src/OR_2.vhd=S
+c:\Users\Edi\Desktop\LFSR_counter_2\simulation/src/AND_5.vhd=S
+c:\Users\Edi\Desktop\LFSR_counter_2\simulation/src/MUX_2_TO_1.vhd=S
+c:\Users\Edi\Desktop\LFSR_counter_2\simulation/src/MUX_32_TO_1.vhd=S
+c:\Users\Edi\Desktop\LFSR_counter_2\simulation/src/XNOR_2.vhd=S
+c:\Users\Edi\Desktop\LFSR_counter_2\simulation/src/ROM_5_TO_5.vhd=S
+c:\Users\Edi\Desktop\LFSR_counter_2\simulation/src/LFSR_counter.vhd=S

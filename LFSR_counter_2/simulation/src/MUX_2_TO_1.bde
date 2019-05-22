@@ -1,0 +1,230 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 27
+ VARIABLES
+ {
+  #ARCHITECTURE="Behavioral_MUX_2_TO_1"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="MUX_2_TO_1"
+  #LANGUAGE="VHDL"
+  AUTHOR="Edi"
+  COMPANY="Utcn"
+  CREATIONDATE="20-May-19"
+  SOURCE=".\\..\\src\\MUX_2_TO_1.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  SIGNALASSIGN  2, 0, 0
+  {
+   LABEL "block_15"
+   TEXT "with sel select X <= sel_0 when '0', sel_1 when '1';"
+   RECT (940,240,1341,360)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+   VTX (  15, 19, 21, 25 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="sel"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (800,340)
+   VERTEXES ( (2,18) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="sel_0"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (800,300)
+   VERTEXES ( (2,22) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="sel_1"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (800,260)
+   VERTEXES ( (2,24) )
+  }
+  INSTANCE  6, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="X"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (1440,260)
+   VERTEXES ( (2,16) )
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,340,748,340)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,300,748,300)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  9, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (748,260,748,260)
+   ALIGN 6
+   PARENT 5
+  }
+  TEXT  10, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1492,260,1492,260)
+   ALIGN 4
+   PARENT 6
+  }
+  NET WIRE  11, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="sel"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  12, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="sel_0"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  13, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="sel_1"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  14, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="X"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  VTX  15, 0, 0
+  {
+   COORD (1341,260)
+  }
+  VTX  16, 0, 0
+  {
+   COORD (1440,260)
+  }
+  WIRE  17, 0, 0
+  {
+   NET 14
+   VTX 15, 16
+  }
+  VTX  18, 0, 0
+  {
+   COORD (800,340)
+  }
+  VTX  19, 0, 0
+  {
+   COORD (940,340)
+  }
+  WIRE  20, 0, 0
+  {
+   NET 11
+   VTX 18, 19
+  }
+  VTX  21, 0, 0
+  {
+   COORD (940,300)
+  }
+  VTX  22, 0, 0
+  {
+   COORD (800,300)
+  }
+  WIRE  23, 0, 0
+  {
+   NET 12
+   VTX 21, 22
+  }
+  VTX  24, 0, 0
+  {
+   COORD (800,260)
+  }
+  VTX  25, 0, 0
+  {
+   COORD (940,260)
+  }
+  WIRE  26, 0, 0
+  {
+   NET 13
+   VTX 24, 25
+  }
+ }
+ 
+}
+

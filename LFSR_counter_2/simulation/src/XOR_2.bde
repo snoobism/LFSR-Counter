@@ -1,0 +1,195 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 21
+ VARIABLES
+ {
+  #ARCHITECTURE="Behavioral_XOR_2"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #ENTITY="XOR_2"
+  #LANGUAGE="VHDL"
+  AUTHOR="Edi"
+  COMPANY="Utcn"
+  CREATIONDATE="20-May-19"
+  SOURCE=".\\..\\src\\XOR_2.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  2, 0, 0
+  {
+   LABEL "process_12"
+   TEXT 
+"process (A,B)\n"+
+"                       begin\n"+
+"                         C <= A xor B;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (880,240,1281,460)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  13, 15, 18 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  15, 18 )
+  }
+  INSTANCE  3, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="A"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (740,260)
+   VERTEXES ( (2,16) )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Input"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="B"
+    #SYMBOL="Input"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (740,300)
+   VERTEXES ( (2,19) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="Output"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="C"
+    #SYMBOL="Output"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT"
+   }
+   COORD (1380,260)
+   VERTEXES ( (2,12) )
+  }
+  TEXT  6, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (688,260,688,260)
+   ALIGN 6
+   PARENT 3
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (688,300,688,300)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  8, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1432,260,1432,260)
+   ALIGN 4
+   PARENT 5
+  }
+  NET WIRE  9, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="A"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  10, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="B"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  NET WIRE  11, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="C"
+    #VHDL_TYPE="BIT"
+   }
+  }
+  VTX  12, 0, 0
+  {
+   COORD (1380,260)
+  }
+  VTX  13, 0, 0
+  {
+   COORD (1281,260)
+  }
+  WIRE  14, 0, 0
+  {
+   NET 11
+   VTX 12, 13
+  }
+  VTX  15, 0, 0
+  {
+   COORD (880,260)
+  }
+  VTX  16, 0, 0
+  {
+   COORD (740,260)
+  }
+  WIRE  17, 0, 0
+  {
+   NET 9
+   VTX 15, 16
+  }
+  VTX  18, 0, 0
+  {
+   COORD (880,300)
+  }
+  VTX  19, 0, 0
+  {
+   COORD (740,300)
+  }
+  WIRE  20, 0, 0
+  {
+   NET 10
+   VTX 18, 19
+  }
+ }
+ 
+}
+

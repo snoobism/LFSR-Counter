@@ -1,0 +1,235 @@
+SCHM0106
+
+HEADER
+{
+ FREEID 16
+ VARIABLES
+ {
+  #ARCHITECTURE="Behavioral_ROM_5_TO_5"
+  #BLOCKTABLE_FILE="#HDL2DIAGRAM.bde"
+  #DEFAULT_RANGE0="<range<index=\"0\"><name=\"address\"><left=\"4\"><direction=\"downto\"><right=\"0\"><initial_value=\"\"><delay=\"\">>"
+  #DEFAULT_RANGE1="<range<index=\"0\"><name=\"data\"><left=\"0\"><direction=\"to\"><right=\"4\"><initial_value=\"\"><delay=\"\">>"
+  #ENTITY="ROM_5_TO_5"
+  #LANGUAGE="VHDL"
+  AUTHOR="Edi"
+  COMPANY="Utcn"
+  CREATIONDATE="20-May-19"
+  SOURCE=".\\..\\src\\ROM_5_TO_5.vhd"
+ }
+}
+
+PAGE ""
+{
+ PAGEHEADER
+ {
+  MARGINS (200,200,200,200)
+  RECT (0,0,0,0)
+ }
+ 
+ BODY
+ {
+  VHDLDESIGNUNITHDR  1, 0, 0
+  {
+   LABEL "Design Unit Header"
+   TEXT 
+"library ieee;\n"+
+"use ieee.std_logic_1164.all;"
+   RECT (220,260,620,439)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  ARCHITECTUREDECLARATIONS  2, 0, 0
+  {
+   LABEL "Architecture Declaration"
+   TEXT 
+"constant my_ROM : mem := (0 => \"00000\", 1 => \"00000\", 2 => \"10101\", 3 => \"10110\", 4 => \"01000\", 5 => \"11011\", 6 => \"01100\", 7 => \"11000\", 8 => \"00111\", 9 => \"10001\", 10 => \"01011\", 11 => \"00010\", 12 => \"10011\", 13 => \"11101\", 14 => \"01111\", 15 => \"00100\", 16 => \"00101\", 17 => \"01110\", 18 => \"11100\", 19 => \"11100\", 20 => \"10010\", 21 => \"00011\", 22 => \"10000\", 23 => \"10000\", 24 => \"00110\", 25 => \"11001\", 26 => \"01101\", 27 => \"01001\", 28 => \"01001\", 29 => \"10111\", 30 => \"10100\", 31 => \"11110\");\n"+
+"--Added by Active-HDL. Do not change code inside this section.\n"+
+"type mem is array (0 to 31) of BIT_VECTOR(0 to 4);\n"+
+"--End of extra code."
+   RECT (220,439,620,684)
+   MARGINS (20,20)
+   MULTILINE
+   SYNTAXCOLORED
+   SHOWLABEL
+   SHOWTEXT
+   CORNER 10
+  }
+  PROCESS  3, 0, 0
+  {
+   LABEL "process_47"
+   TEXT 
+"process (address)\n"+
+"                       begin\n"+
+"                         case address is \n"+
+"                           when \"00000\" => \n"+
+"                              data <= my_ROM(0);\n"+
+"                           when \"00001\" => \n"+
+"                              data <= my_ROM(1);\n"+
+"                           when \"00010\" => \n"+
+"                              data <= my_ROM(2);\n"+
+"                           when \"00011\" => \n"+
+"                              data <= my_ROM(3);\n"+
+"                           when \"00100\" => \n"+
+"                              data <= my_ROM(4);\n"+
+"                           when \"00101\" => \n"+
+"                              data <= my_ROM(5);\n"+
+"                           when \"00110\" => \n"+
+"                              data <= my_ROM(6);\n"+
+"                           when \"00111\" => \n"+
+"                              data <= my_ROM(7);\n"+
+"                           when \"01000\" => \n"+
+"                              data <= my_ROM(8);\n"+
+"                           when \"01001\" => \n"+
+"                              data <= my_ROM(9);\n"+
+"                           when \"01010\" => \n"+
+"                              data <= my_ROM(10);\n"+
+"                           when \"01011\" => \n"+
+"                              data <= my_ROM(11);\n"+
+"                           when \"01100\" => \n"+
+"                              data <= my_ROM(12);\n"+
+"                           when \"01101\" => \n"+
+"                              data <= my_ROM(13);\n"+
+"                           when \"01110\" => \n"+
+"                              data <= my_ROM(14);\n"+
+"                           when \"01111\" => \n"+
+"                              data <= my_ROM(15);\n"+
+"                           when \"10000\" => \n"+
+"                              data <= my_ROM(16);\n"+
+"                           when \"10001\" => \n"+
+"                              data <= my_ROM(17);\n"+
+"                           when \"10010\" => \n"+
+"                              data <= my_ROM(18);\n"+
+"                           when \"10011\" => \n"+
+"                              data <= my_ROM(19);\n"+
+"                           when \"10100\" => \n"+
+"                              data <= my_ROM(20);\n"+
+"                           when \"10101\" => \n"+
+"                              data <= my_ROM(21);\n"+
+"                           when \"10110\" => \n"+
+"                              data <= my_ROM(22);\n"+
+"                           when \"10111\" => \n"+
+"                              data <= my_ROM(23);\n"+
+"                           when \"11000\" => \n"+
+"                              data <= my_ROM(24);\n"+
+"                           when \"11001\" => \n"+
+"                              data <= my_ROM(25);\n"+
+"                           when \"11010\" => \n"+
+"                              data <= my_ROM(26);\n"+
+"                           when \"11011\" => \n"+
+"                              data <= my_ROM(27);\n"+
+"                           when \"11100\" => \n"+
+"                              data <= my_ROM(28);\n"+
+"                           when \"11101\" => \n"+
+"                              data <= my_ROM(29);\n"+
+"                           when \"11110\" => \n"+
+"                              data <= my_ROM(30);\n"+
+"                           when \"11111\" => \n"+
+"                              data <= my_ROM(31);\n"+
+"                         end case;\n"+
+"                       end process;\n"+
+"                      "
+   RECT (1040,240,1441,640)
+   MARGINS (20,20)
+   SYNTAXCOLORED
+   SHOWTEXT
+   VTX (  11, 14 )
+   VARIABLES
+   {
+    #UPDATE_SENS_LIST="0"
+   }
+   LIST (  14 )
+  }
+  INSTANCE  4, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusInput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="address(4:0)"
+    #SYMBOL="BusInput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT_VECTOR"
+   }
+   COORD (900,260)
+   VERTEXES ( (2,13) )
+  }
+  INSTANCE  5, 0, 0
+  {
+   VARIABLES
+   {
+    #COMPONENT="BusOutput"
+    #CUSTOM_NAME=""
+    #LIBRARY="#terminals"
+    #REFERENCE="data(0:4)"
+    #SYMBOL="BusOutput"
+    #SYMBOL_GLOBALLY_UNIQUE_IDENTIFIER=""
+    #VHDL_TYPE="BIT_VECTOR"
+   }
+   COORD (1540,260)
+   VERTEXES ( (2,10) )
+  }
+  TEXT  6, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (848,260,848,260)
+   ALIGN 6
+   PARENT 4
+  }
+  TEXT  7, 0, 0
+  {
+   TEXT "$#REFERENCE"
+   RECT (1592,260,1592,260)
+   ALIGN 4
+   PARENT 5
+  }
+  NET BUS  8, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="address(4:0)"
+    #VHDL_TYPE="BIT_VECTOR"
+   }
+  }
+  NET BUS  9, 0, 0
+  {
+   VARIABLES
+   {
+    #NAME="data(0:4)"
+    #VHDL_TYPE="BIT_VECTOR"
+   }
+  }
+  VTX  10, 0, 0
+  {
+   COORD (1540,260)
+  }
+  VTX  11, 0, 0
+  {
+   COORD (1441,260)
+  }
+  BUS  12, 0, 0
+  {
+   NET 9
+   VTX 10, 11
+  }
+  VTX  13, 0, 0
+  {
+   COORD (900,260)
+  }
+  VTX  14, 0, 0
+  {
+   COORD (1040,260)
+  }
+  BUS  15, 0, 0
+  {
+   NET 8
+   VTX 13, 14
+  }
+ }
+ 
+}
+
